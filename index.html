@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hogwarts Students</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Hogwarts students 1991</h1>
+    <nav>
+      <button data-house="all" class="valgt">All</button>
+      <div id="menubuttonhouse">Houses▼</div>
+      <ul id="menuhouse" class="hidden">
+        <li><button data-house="gryffindor">Gryffindor</button></li>
+        <li><button data-house="slytherin">Slytherin</button></li>
+        <li><button data-house="hufflepuff">Hufflepuff</button></li>
+        <li><button data-house="ravenclaw">Ravenclaw</button></li>
+      </ul>
+      <button data-namesort="sortbyname" class="sortbyname">
+        Sort by name
+      </button>
+      <button class="expelled">Expelled</button>
+    </nav>
+    <template>
+      <div class="student">
+        <h2 class="studentname"></h2>
+        <p class="house"></p>
+      </div>
+    </template>
+    <main></main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
